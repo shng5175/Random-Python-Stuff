@@ -1,0 +1,18 @@
+A: Copy the error message Python raises to your scratchpad.
+Traceback (most recent call last):
+  File "C:/Python27/things.py", line 18, in <module>
+    f = file( textfile, "a")
+IOError: [Errno 2] No such file or directory: 'helluva/engineer.txt'
+
+D: record your observations in your scratchpad (where did back1.txt land? is this where you expected it to be?). 
+If you cannot find back1.txt, then record any error messages that Python generated.
+Traceback (most recent call last):
+  File "C:/Python27/things.py", line 18, in <module>
+    f = file( textfile, "a")
+IOError: [Errno 13] Permission denied: '../back1.txt'
+
+E: In your scratchpad, describe which folders had to be accessed and examined by Python in order to correctly update helluva/engineer.txt. 
+What order do you think these directories were accessed?
+The folders that had to be accessed and examined by Python in order to coreectly update helluva/engineer.txt were the parent folder,
+Python27, and the helluva folder inside of Python27. I think these were accessed in that order of parent directory to child directory 
+because the file is located inside of the helluva directory, which is inside of the parent directory, so it has to go through Python27 to find helluva.
